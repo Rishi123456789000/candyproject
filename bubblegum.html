@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const url = "https://list-bmu8.onrender.com/bubble_gums";
+    let options = {
+        method: "GET",
+        headers: {
+            "content-type": "application/json",
+        }
+    };
+
+    fetch(url, options)
+        .then(response => response.json())
+        .then(data => {
+            displayCandyData(data);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+});
+
+function displayCandyData(candies) {
+    let mainDiv = document.createElement("div");
+    mainDiv.setAttribute("style", "display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;");
+
+    candies.forEach(candy => {
+        let childDiv = document.createElement("div");
+        childDiv.setAttribute("style", "border: 1px solid #ccc; padding: 15px; width: 300px; text-align: center;");
+
+        let title = document.createElement("h4");
+        title.innerText = candy.name;
+
+        let img = document.createElement("img");
+        img.setAttribute("src", candy.image_url);
+        img.setAttribute("alt", candy.name);
+        img.width = 250;
+        img.height = 250;
+
+        let flavor = document.createElement("p");
+        flavor.innerText = `Flavor: ${candy.flavor}`;
+
+        let price = document.createElement("p");
+        price.innerText = `Price: $${candy.price}`;
+
+        let addToCartButton = document.createElement("button");
+        addToCartButton.innerText = candy.Button;
+        addToCartButton.setAttribute("style", "background-color: #f1c40f; padding: 10px; border: none; cursor: pointer;");
+        
+        let reviews = document.createElement("p");
+        reviews.innerText = `Reviews: ${candy.reviews.stars} stars`;
+
+        childDiv.appendChild(title);
+        childDiv.appendChild(img);
+        childDiv.appendChild(flavor);
+        childDiv.appendChild(price);
+        childDiv.appendChild(addToCartButton);
+        childDiv.appendChild(reviews);
+        mainDiv.appendChild(childDiv);
+    });
+
+    document.body.appendChild(mainDiv);
+}
+
+    </script>
+</body>
+</html>

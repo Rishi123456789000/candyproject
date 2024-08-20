@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Search Bar -->
+    <div class="container my-4">
+        <input type="text" id="search-item" class="form-control" placeholder="Search for candies...">
+    </div>
+
+    <center>
+        <h2>MENU</h2>
+    </center>
+
+
+    <div class="container" id="product-list">
+        <div class="card-container">
+
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="https://i.pinimg.com/236x/6e/f6/ba/6ef6bae28b7aa1302a4ffb4f3532b053.jpg"
+                    alt="Candy Image">
+                <div class="card-body">
+                    <h5 class="card-title">"chocolate_candies"</h5>
+                    <!-- <button id="btn4">view candies</button> -->
+                    <button type="button" id="btn4" class="btn btn-outline-primary">view candies</button>
+
+                </div>
+            </div>
+
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="https://i.pinimg.com/236x/5a/55/84/5a55841ed2d6be7ef481e794f0001f7d.jpg"
+                    alt="Candy Image">
+                <div class="card-body">
+                    <h5 class="card-title">gummy candies 2</h5>
+                    <!-- <button id="btn5">view candies</button> -->
+                    <button type="button" id="btn5" class="btn btn-outline-primary">view candies</button>
+
+                </div>
+            </div>
+            <!-- Category 3 -->
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="https://i.pinimg.com/236x/47/3d/75/473d75464efd2bb5e2c61640e98e0328.jpg"
+                    alt="Candy Image">
+                <div class="card-body">
+                    <h5 class="card-title">chewy candies 3</h5>
+                    <button type="button" id="btn6" class="btn btn-outline-primary">view candies</button>
+                </div>
+            </div>
+            <!-- Category 4 -->
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="https://i.pinimg.com/236x/4a/c3/ab/4ac3abbaf39df562420543f8fc764ac2.jpg"
+                    alt="Candy Image">
+                <div class="card-body">
+                    <h5 class="card-title">hard candies 4</h5>
+                    <button type="button" id="btn7" class="btn btn-outline-primary">view candies</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="https://i.pinimg.com/236x/d2/c7/36/d2c736104de73ef37ee2caff53a24105.jpg"
+                    alt="Candy Image">
+                <div class="card-body">
+                    <h5 class="card-title">bubble_gums 5</h5>
+                    <button type="button" id="btn8" class="btn btn-outline-primary">view candies</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 30%;">
+                <img class="card-img-top" src="https://i.pinimg.com/236x/91/d3/36/91d33647a365814e3009dbd4744bd3f0.jpg"
+                    alt="Candy Image">
+                <div class="card-body">
+                    <h5 class="card-title">lollipops 6</h5>
+                    <button type="button" id="btn9" class="btn btn-outline-primary">view candies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let viewcandies1 = document.getElementById("btn4")
+        viewcandies1.addEventListener("click", () => {
+            window.location.assign("./chocolatecandies.html")
+        })
+        let viewcandies2 = document.getElementById("btn5")
+        viewcandies2.addEventListener("click", () => {
+            window.location.assign("./gummycandies.html")
+        })
+
+        let viewcandies3 = document.getElementById("btn6")
+        viewcandies3.addEventListener("click", () => {
+            window.location.assign("./chewycandies.html")
+        })
+
+        let viewcandies4 = document.getElementById("btn7")
+        viewcandies4.addEventListener("click", () => {
+            window.location.assign("./hardcandies.html")
+        })
+        let viewcandies5 = document.getElementById("btn8")
+        viewcandies5.addEventListener("click", () => {
+            window.location.assign("./bubblegum.html")
+        })
+        let viewcandies6 = document.getElementById("btn9")
+        viewcandies6.addEventListener("click", () => {
+            window.location.assign("./lolipops.html")
+        })
+
+
+        
+
+   const search = () => {
+    const searchBox = document.getElementById("search-item").value.toUpperCase();
+    const storeitems = document.getElementById("product-list");
+    const cards = storeitems.getElementsByClassName("card");  // Get all the cards
+
+    for (let i = 0; i < cards.length; i++) {
+        let card = cards[i];
+        let pname = card.getElementsByTagName("h5")[0];  // Get the product name
+
+        if (pname) {
+            let textvalue = pname.textContent || pname.innerText;
+            if (textvalue.toUpperCase().indexOf(searchBox) > -1) {
+                card.style.display = "";  
+            } else {
+                card.style.display = "none";  
+            }
+        }
+    }
+};
+document.getElementById("search-item").addEventListener("keyup", search);
+
+
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./one.js"></script>
+</body>
+
+</html>

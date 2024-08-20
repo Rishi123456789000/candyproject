@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Candy Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1392684392.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar-custom">
+        <div class="navbar-overlay">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="https://i.pinimg.com/564x/23/5a/51/235a51a7f5fb590d678c8d84d5100dea.jpg" alt="CandyStore Logo" style="width: 70px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item">
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search for candies" aria-label="Search"  id="search-item one">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </li>
+                        <li class="nav-item"><a  href="#"class="nav-link" href="#"><i class="fas fa-bars"></i>MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> <button id="btn3" style="background-color:wheat;" >buyNow</button></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Sign up/Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tags"></i> Offers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                       
+                    </ul>
+                </div>
+            </nav>
+            <div class="overlay-content">
+                <h1>My Candy Store</h1>
+                <a href="#aboutus" class="btn btn-primary">About us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar" id="loginSidebar">
+        <form>
+            <h2>Login</h2>
+            <label> User Name: <br><input type="text" id="name" /></label><br>
+            <label>Password: <br><input type="password" id="passw" value="" /></label><br>
+            <label>Confirm Password: <br><input type="password" id="confPass" value="" /></label><br>
+            <label>Email: <br><input type="email" id="mail" value="" /></label><br>
+            <label>Phone Number: <br><input type="number" id="num" value="" /></label><br>
+           
+            <label><input type="button" value="Login" id="btn" /></label><br>
+            <label><input type="button" value="signup" id="btn2" /></label><br>
+        </form>
+    </div>
+
+    
+
+    <section id="products-cakes">
+      <div class="container py-3">
+        <div class="row py-3">
+          <div class="col-lg-5 m-auto text-center">
+            <h4 style="font-family:inherit;">Types of candies</h4>
+          </div>
+
+          
+          <div class="row">
+            <div class="col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-body">
+                  <img src="https://www.bostongirlbakes.com/wp-content/uploads/2021/12/20211220-IMG_6454-scaled.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <h6> Chocolate candies (1pack)</h6>
+              <p>R.s 400/-</p>
+               <button type="button" class="btn btn-outline-dark button">Cart</button>
+              <button type="button" class="btn btn-outline-success button">Buy now</button>
+            </div>
+            <div class="col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-body">
+                  <img src="https://i.pinimg.com/236x/51/c6/07/51c6076a58d9df62871f5fe3da7c45d8.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <h6>Gummy Candies (1pack)</h6>
+              <p>R.s 475/-</p>
+              <button type="button" class="btn btn-outline-dark button">Cart</button>
+              <button type="button" class="btn btn-outline-success button">Buy now</button>
+
+            </div>
+            <div class="col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-body">
+                  <img src="https://i.pinimg.com/236x/b5/f5/a8/b5f5a88c29e036c5c58bc17558c081ef.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+              <h6>chewy candies(1pack)</h6>
+              <p>R.s 370/-</p>
+              <button type="button" class="btn btn-outline-dark button">Cart</button>
+              <button type="button" class="btn btn-outline-success button">Buy now</button>
+            </div>
+            <div class="col-lg-3 text-center">
+              <div class="card border-0 bg-light mb-2">
+                <div class="card-body">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmQyIpvAHKumUTxXFzQu6ypyvy9F8OTTAt4M4v-NHk2DpJrrP4CBcv-teOAnXo0QG7WvE&usqp=CAU" alt="" class="img-fluid">
+                </div>
+              </div>
+              <h6>Hard Candies (1pack)</h6>
+              <p>R.s 250/-</p>
+              <button type="button" class="btn btn-outline-success button">Buy now</button>
+              <button type="button" class="btn btn-outline-dark button">Cart</button>
+            </div>
+              
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+          <!-- <div id="data-container" class="container mt-5"></div>
+           <div id="data-container2" class="container mt-5.1"></div> --> -->
+
+
+    
+<section id="aboutus" class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <h2>About Us</h2>
+              <p>Welcome to Sweet Delights, your ultimate destination for all things sweet and delightful! Our journey began in 2010 with a simple passion for creating the most delectable candies that bring joy and sweetness into people's lives. At Sweet Delights, we believe in using only the finest ingredients to craft our wide variety of candies, ranging from rich chocolates to tangy gummies and classic hard candies. Each piece is carefully made with love and attention to detail, ensuring that every bite is a burst of flavor and happiness.</p>
+              <p>Our mission goes beyond just satisfying your sweet tooth; we aim to create unforgettable experiences with every candy.  Sweet Delights is here to make every moment sweeter. We take pride in our innovative recipes and the joy they bring to our customers. </p>
+          </div>
+          <div class="col-lg-6">
+              <img src="https://i.pinimg.com/564x/ba/7d/fd/ba7dfdfa62d09fec9b3c4e7b4da0376e.jpg" class="img-fluid" alt="About Us Image">
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6 order-lg-2">
+              <p>We are committed to providing our customers with the best candy experience. Our candies are not just about taste but also about creating memories that last a lifetime. Join us on this sweet journey, and discover why Sweet Delights is a name synonymous with quality and happiness.</p>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+              <img src="https://i.pinimg.com/236x/36/c6/c2/36c6c2e13d85fd7afd488548143bcccc.jpg" class="img-fluid" alt="About Us Image">
+          </div>
+      </div>
+  </div>
+</section>
+
+
+   <center><h2> reviews</h2></center>
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card">
+              <img src="https://i.pinimg.com/236x/04/47/e0/0447e08c061dc037c2dc0a8df883585f.jpg" class="card-img-top rounded-circle" alt="Person's Image" style="width: 100px; height: 100px; margin: auto; margin-top: 15px;">
+              <div class="card-body text-center">
+                  <p class="card-text">"This candy is absolutely delightful!"</p>
+                  <div class="rating">
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-secondary">☆</span> 
+                  </div>
+                  <p class="card-text">4/5</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <img src="https://i.pinimg.com/236x/04/47/e0/0447e08c061dc037c2dc0a8df883585f.jpg" class="card-img-top rounded-circle" alt="Person's Image" style="width: 100px; height: 100px; margin: auto; margin-top: 15px;">
+              <div class="card-body text-center">
+                  <p class="card-text">"The best candies I've ever had!"</p>
+                  <div class="rating">
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                  </div>
+                  <p class="card-text">5/5</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <img src="https://i.pinimg.com/236x/04/47/e0/0447e08c061dc037c2dc0a8df883585f.jpg" class="card-img-top rounded-circle" alt="Person's Image" style="width: 100px; height: 100px; margin: auto; margin-top: 15px;">
+              <div class="card-body text-center">
+                  <p class="card-text">"Sweet and delicious, highly recommend!"</p>
+                  <div class="rating">
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-warning">★</span>
+                      <span class="text-secondary">☆</span> 
+                  </div>
+                  <p class="card-text">4/5</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<footer id="contactus">
+  <div class="container py-3">
+    <div class="row py-5">
+      <div class="col-lg-5 m-auto text-center">
+        <h1>CONTACT US</h1>
+      </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mt-5 text-center">
+        <h4>Location</h4>
+        <p>2-2-2000 miyapur manikona delhi-55086</p>
+        <button type="button" class="btn btn-dark"><i class="fa-solid fa-house"></i></button>
+      </div>
+      <div class="col-lg-4 mt-5 text-center">
+        <h4>Phone-No</h4>
+        <p>+91-998853241</p>
+        <button type="button" class="btn btn-dark"><i class="fa-solid fa-phone"></i></button>
+      </div>
+      <div class="col-lg-4 mt-5 text-center">
+        <h4>Email</h4>
+        <p class="text">beackonsbake@gmail.com</p>
+        <button type="button" class="btn btn-dark"><i class="fa-solid fa-envelope"></i></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mt-5 text-center">
+          <a href=""><p><i class="fa-brands fa-instagram"></i>  instagram</p></a>
+        </div>
+      <div class="col-lg-4 mt-5 text-center">
+        <a href=""><p><i class="fa-brands fa-twitter"></i>  Twitter</p></a>
+      </div>
+    <div class="col-lg-4 mt-5 text-center">
+      <a href=""><p><i class="fa-brands fa-facebook"></i>  Facebook</p></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+            
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="one.js"></script>
+</body>
+</html>

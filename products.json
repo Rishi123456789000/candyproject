@@ -1,0 +1,402 @@
+{
+    "chocolate_candies": [
+      {
+        "id": "1",
+        "name": "Dark Chocolate Truffles",
+        "price": 1000,
+        "flavor": "Dark Chocolate",
+        "image_url": "https://i.pinimg.com/236x/6e/f6/ba/6ef6bae28b7aa1302a4ffb4f3532b053.jpg",
+        "reviews": {
+          "stars": 4.5
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "2",
+        "name": "Milk Chocolate Bars",
+        "price": 500,
+        "flavor": "Milk Chocolate",
+        "image_url": "https://i.pinimg.com/236x/6f/eb/8b/6feb8bf5d4e6c1bd0f5ede655f3c9fe4.jpg",
+        "reviews": {
+          "stars": 4.0
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "3",
+        "name": "White Chocolate Bites",
+        "price": 750,
+        "flavor": "White Chocolate",
+        "image_url": "https://i.pinimg.com/236x/59/5b/6e/595b6edd093a3ccc5980df96210255b3.jpg",
+        "reviews": {
+          "stars": 4.2
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "4",
+        "name": "Hazelnut Chocolate Squares",
+        "price": 1200,
+        "flavor": "Hazelnut",
+        "image_url": "https://i.pinimg.com/236x/ea/a3/87/eaa38747f1d72734eabee500984a40dc.jpg",
+        "reviews": {
+          "stars": 4.6
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "5",
+        "name": "Caramel Filled Chocolates",
+        "price": 900,
+        "flavor": "Caramel",
+        "image_url": "https://i.pinimg.com/236x/1e/48/60/1e486059d926468607442a116e0db965.jpg",
+        "reviews": {
+          "stars": 4.3
+        },
+        "Button":"Add To Cart"
+      }
+    ],
+    "gummy_candies": [
+      {
+        "id": "6",
+        "name": "Sour Gummy Bears",
+        "price": 400,
+        "flavor": "Sour",
+        "image_url": "https://i.pinimg.com/236x/27/33/c4/2733c420cd598c55111c7793590e9297.jpg",
+        "reviews": {
+          "stars": 4.1
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "7",
+        "name": "Fruity Gummy Worms",
+        "price": 450,
+        "flavor": "Fruity",
+        "image_url": "https://i.pinimg.com/236x/05/c6/a3/05c6a3a45dc31ff2f196243c708e4aad.jpg",
+        "reviews": {
+          "stars": 4.0
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "8",
+        "name": "Cola Gummies",
+        "price": 300,
+        "flavor": "Cola",
+        "image_url": "https://i.pinimg.com/236x/51/c6/07/51c6076a58d9df62871f5fe3da7c45d8.jpg",
+        "reviews": {
+          "stars": 3.8
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "9",
+        "name": "Peach Rings",
+        "price": 350,
+        "flavor": "Peach",
+        "image_url": "https://i.pinimg.com/236x/91/29/65/91296554833f3eded45d6791db0a41b2.jpg",
+        "reviews": {
+          "stars": 4.4
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "10",
+        "name": "Berry Mix Gummies",
+        "price": 500,
+        "flavor": "Berry",
+        "image_url": "https://i.pinimg.com/236x/5f/c5/20/5fc520d6bd9d4db5381ba686a77373e3.jpg",
+        "reviews": {
+          "stars": 4.3
+        },
+        "Button":"Add To Cart"
+      }
+    ],
+    "hard_candies": [
+      {
+        "id": "11",
+        "name": "Butterscotch Discs",
+        "price": 200,
+        "flavor": "Butterscotch",
+        "image_url": "https://i.pinimg.com/236x/a9/93/bc/a993bcb282a281f21eea1741190812dc.jpg",
+        "reviews": {
+          "stars": 3.9
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "12",
+        "name": "Peppermint Swirls",
+        "price": 250,
+        "flavor": "Peppermint",
+        "image_url": "https://i.pinimg.com/236x/e6/6b/8f/e66b8f58de815f8abdea763b2f1c6aa8.jpg",
+        "reviews": {
+          "stars": 4.2
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "13",
+        "name": "Cinnamon Drops",
+        "price": 300,
+        "flavor": "Cinnamon",
+        "image_url": "https://i.pinimg.com/236x/a3/77/55/a3775565315dc56957e6eaa388e20f47.jpg",
+        "reviews": {
+          "stars": 3.7
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "14",
+        "name": "Fruit Flavored Lollipops",
+        "price": 150,
+        "flavor": "Fruit",
+        "image_url": "https://i.pinimg.com/236x/c0/69/37/c0693732e30669d2b8903d13a9ccc6c9.jpg",
+        "reviews": {
+          "stars": 4.3
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "15",
+        "name": "Root Beer Barrels",
+        "price": 350,
+        "flavor": "Root Beer",
+        "image_url": "https://i.pinimg.com/236x/ee/47/b7/ee47b7e0c6e594baa06a7c3f08f0c9e5.jpg",
+        "reviews": {
+          "stars": 4.0
+        },
+        "Button":"Add To Cart"
+      }
+    ],
+    "chewy_candies": [
+      {
+        "id": "16",
+        "name": "Chewy Caramels",
+        "price": 600,
+        "flavor": "Caramel",
+        "image_url": "https://i.pinimg.com/236x/91/e7/ec/91e7ec88ce9737201c238548be5d545a.jpg",
+        "reviews": {
+          "stars": 4.4
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "17",
+        "name": "Fruit Chews",
+        "price": 500,
+        "flavor": "Fruit",
+        "image_url": "https://i.pinimg.com/236x/fb/a0/8c/fba08cfdecf01ec5112325f79598113d.jpg",
+        "reviews": {
+          "stars": 4.1
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "18",
+        "name": "Taffy Assortment",
+        "price": 700,
+        "flavor": "Assorted",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdJd5sQx7qzNr9eeXBFr_j2_IQaiqkSUsxg&s",
+        "reviews": {
+          "stars": 4.2
+        },
+        "Button":"Add To Cart"
+      },
+      {g
+        "id": "19",
+        "name": "Licorice Bites",
+        "price": 550,
+        "flavor": "Licorice",
+        "image_url": "https://i.pinimg.com/236x/b5/f5/a8/b5f5a88c29e036c5c58bc17558c081ef.jp",
+        "reviews": {
+          "stars": 4.0
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "20",
+        "name": "Nougat Chews",
+        "price": 800,
+        "flavor": "Nougat",
+        "image_url": "https://i.pinimg.com/236x/b5/f5/a8/b5f5a88c29e036c5c58bc17558c081ef.jp",
+        "reviews": {
+          "stars": 4.3
+        },
+        "Button":"Add To Cart"
+      }
+    ],
+    "mint_candies": [
+      {
+        "id": "21",
+        "name": "Peppermint Patties",
+        "price": 450,
+        "flavor": "Peppermint",
+        "image_url": "https://i.pinimg.com/236x/44/31/68/4431687e82689965e6c0736e0401e02e.jpg",
+        "reviews": {
+          "stars": 4.5
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "22",
+        "name": "Spearmint Leaves",
+        "price": 300,
+        "flavor": "Spearmint",
+        "image_url": "https://i.pinimg.com/236x/41/4c/37/414c37a33f2bcbe9d6803e4c0d7d9ccf.jpg",
+        "reviews": {
+          "stars": 4.0
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "23",
+        "name": "Wintergreen Mints",
+        "price": 350,
+        "flavor": "Wintergreen",
+        "image_url": "https://i.pinimg.com/236x/02/2b/ed/022bed35cc0eb7c12acb9a4d0e8b6272.jpg",
+        "reviews": {
+          "stars": 4.2
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "24",
+        "name": "Cinnamon Mints",
+        "price": 400,
+        "flavor": "Cinnamon",
+        "image_url": "https://i.pinimg.com/236x/fd/6b/94/fd6b94fe41b6ab0d9a621a705d7e27ff.jpg",
+        "reviews": {
+          "stars": 4.1
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "25",
+        "name": "Chocolate Mints",
+        "price": 500,
+        "flavor": "Chocolate Mint",
+        "image_url": "https://i.pinimg.com/236x/8e/ae/d5/8eaed53115001e42b5bca40ad59e1a4e.jpg",
+        "reviews": {
+          "stars": 4.4
+        },
+        "Button":"Add To Cart"
+      }
+    ],
+    "lollipops": [
+      {
+        "id": "26",
+        "name": "Strawberry Lollipops",
+        "price": 250,
+        "flavor": "Strawberry",
+        "image_url": "https://i.pinimg.com/236x/f2/b7/2a/f2b72a236d085f3024ef0e54f1df2623.jpg",
+        "reviews": {
+          "stars": 4.3
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "27",
+        "name": "Blueberry Lollipops",
+        "price": 250,
+        "flavor": "Blueberry",
+        "image_url": "https://i.pinimg.com/236x/6d/19/29/6d19298369cf6f94401f39cf5326597d.jpg",
+        "reviews": {
+          "stars": 4.2
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "28",
+        "name": "Watermelon Lollipops",
+        "price": 250,
+        "flavor": "Watermelon",
+        "image_url": "https://i.pinimg.com/236x/f8/c8/72/f8c872defdd69775a1e4919796bf7782.jpg",
+        "reviews": {
+          "stars": 4.0
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "29",
+        "name": "Grape Lollipops",
+        "price": 250,
+        "flavor": "Grape",
+        "image_url": "https://i.pinimg.com/236x/b7/78/16/b77816cbcc89e042f4c8248d2e7df56b.jpg",
+        "reviews": {
+          "stars": 4.1
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "30",
+        "name": "Mango Lollipops",
+        "price": 250,
+        "flavor": "Mango",
+        "image_url": "https://i.pinimg.com/236x/54/5e/fc/545efce549dba24203beb96960bce120.jpg",
+        "reviews": {
+          "stars": 4.4
+        },
+        "Button":"Add To Cart"
+      }
+    ],
+    "bubble_gums": [
+      {
+        "id": "31",
+        "name": "Classic Bubble Gum",
+        "price": 100,
+        "flavor": "Bubblegum",
+        "image_url": "https://i.pinimg.com/564x/b3/39/a3/b339a36ecff221c28bc168b17bbf524c.jpg",
+        "reviews": {
+          "stars": 4.3
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "32",
+        "name": "Strawberry Bubble Gum",
+        "price": 150,
+        "flavor": "Strawberry",
+        "image_url": "https://i.pinimg.com/236x/66/52/53/665253563d085d5170e919907d0dfc19.jpg",
+        "reviews": {
+          "stars": 4.2
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "33",
+        "name": "Grape Bubble Gum",
+        "price": 150,
+        "flavor": "Grape",
+        "image_url": "https://i.pinimg.com/236x/78/d6/c6/78d6c6c4f78ab1ac75f9e9eab92c88d7.jpg",
+        "reviews": {
+          "stars": 4.0
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "34",
+        "name": "Watermelon Bubble Gum",
+        "price": 150,
+        "flavor": "Watermelon",
+        "image_url": "https://i.pinimg.com/236x/d5/70/ff/d570fffff7975127461a5c9b0c09f873.jpg",
+        "reviews": {
+          "stars": 4.1
+        },
+        "Button":"Add To Cart"
+      },
+      {
+        "id": "35",
+        "name": "Mint Bubble Gum",
+        "price": 150,
+        "flavor": "Mint",
+        "image_url": "https://i.pinimg.com/236x/25/ae/47/25ae47b01663378490031690cf0d2a11.jpg",
+        "reviews": {
+          "stars": 4.4
+        },
+        "Button":"Add To Cart"
+      }
+    ]
+  }
+  

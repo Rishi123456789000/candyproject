@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.navbar-custom {
+    background: url('https://i.pinimg.com/564x/cf/ee/9a/cfee9a4303b75e16c58f689fdefb1141.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    /* Height of the background image */
+    position: relative;
+    transition: background 0.5s ease-in-out;
+}
+
+.navbar-custom:hover {
+    background: url('https://i.pinimg.com/564x/46/fd/23/46fd230c54c6d201c83d317e248b816f.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-custom .navbar {
+    background: transparent;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffe6e9;
+    transition: width 0.2s ease;
+    transition-delay: 0.2s;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffe6e9;
+}
+
+.navbar .nav-link:hover {
+    color: #ffe6e9 !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.overlay-content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 500px;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    /* Distribute content evenly */
+}
+
+.sidebar form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sidebar form input[type="text"],
+.sidebar form input[type="password"],
+.sidebar form input[type="email"],
+.sidebar form input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.sidebar form input[type="button"] {
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar form input[type="button"]:hover {
+    background-color: #218838;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding: 20px;
+    */ box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-us .picture {
+    flex: 1;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-us .picture img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.about-us .text1 {
+    flex: 1;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.section-gap {
+    padding-top: 50px;
+}
+
+
+
+
+/* #data-container .item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.img-fluid {
+    height: 250px;
+    width: 450px;
+    padding: auto;
+}
+
+.candies {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 10%;
+    min-width: 25%;
+    gap: 5px;
+    font-size: large;
+}
+
+#search-item {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#data-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    /* Adjust as needed to ensure it appears below the search bar */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#data-container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+#data-container2 .item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+} */
+
+
+
+#products-cakes button {
+    height: 50px;
+    width: 40%;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+}
+
+#products-cakes h3 {
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-family: 'Allura', cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.card:hover {
+    -webkit-box-shadow: 9px 18px 43px 21px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 9px 18px 43px 21px rgba(0, 0, 0, 0.82);
+    box-shadow: 9px 18px 43px 21px rgba(0, 0, 0, 0.82);
+    transition: 0.5;
+}
+
+
+
+#contactus{
+    background-color: black;
+    padding-bottom: 20PX;
+    margin-top: 0;
+}
+
+#contactus p{
+    color: white;
+    font-size: 1rem;
+}
+
+#contactus h4{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+#contactus a{
+    text-decoration: none;
+}
+.contact{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+#contactus h1{
+    margin-bottom: 0;
+    padding-top: 0;
+    color: white;
+}
+#products-icecreams{
+    margin-bottom: 30px;
+}

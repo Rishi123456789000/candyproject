@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: #85929E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form_container {
+            width: 30vw;
+            background-color: #D5DBDB;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form_container input,
+        .form_container button {
+            display: block;
+            width: calc(100% - 20px);
+            margin: 10px auto;
+            padding: 10px;
+            border: 2px solid #566573;
+            border-radius: 10px;
+            font-size: 15px;
+            color: #566573;
+            outline: none;
+        }
+
+        .form_container input::placeholder {
+            color: #566573;
+        }
+
+        .btn {
+            background: none;
+            color: #566573;
+        }
+
+        .btn2 {
+            background: none;
+            color: white;
+            border: 2px solid white;
+            text-align: center;
+        }
+
+        .gen {
+            text-align: center;
+            font-weight: bolder;
+            background: transparent;
+        }
+
+        .otpInput{
+            text-align: center;
+        }
+
+        #mess h6 {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* Media Queries */
+
+@media (max-width: 600px) {
+    .form_container {
+        width: 90vw; 
+        padding: 15px;
+    }
+
+    .form_container input,
+    .form_container button {
+        width: calc(100% - 20px); 
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .gen {
+        font-size: 18px;
+    }
+
+    #mess h6 {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .form_container {
+        width: 70vw;
+        padding: 15px;
+    }
+
+    .form_container input,
+    .form_container button {
+        width: calc(100% - 20px);
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    .gen {
+        font-size: 20px;
+    }
+
+    #mess h6 {
+        font-size: 15px;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .form_container {
+        width: 30vw;
+        max-width: 500px;
+    }
+
+    .form_container input,
+    .form_container button {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .gen {
+        font-size: 22px;
+    }
+
+    #mess h6 {
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_container">
+            <form id="registrationForm">
+                <div id="mess"></div>
+                <input type="text" placeholder="Enter your name" id="name">
+                <input type="text" placeholder="Enter your user name" id="username">
+                <input type="password" placeholder="Enter your password" id="password">
+                <input type="password" placeholder="Confirm your password" id="cnf">
+                <input type="tel" placeholder="Enter your mobile number" id="mb">
+                <input type="text" class="gen" id="otp" readonly>
+                <button type="button" class="btn2" id="btn">Generate OTP</button>
+                <input type="text" placeholder="Enter the OTP" id="otpInput" class="otpInput">
+                <button type="submit" class="btn" id="btn1">Submit</button>
+                <span>Already Register Login Here <a href="./login.html">Login</a></span>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", () => {
+            let otp = document.getElementById("otp");
+            let generatedOtp = "";
+            for (let i = 0; i < 6; i++) {
+                generatedOtp += Math.floor(Math.random() * 10);
+            }
+            otp.value = generatedOtp;
+        });
+
+        document.getElementById("registrationForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            let name = document.getElementById("name").value;
+            let userName = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("cnf").value;
+            let mobileNumber = document.getElementById("mb").value;
+            let otp = document.getElementById("otp").value;
+            let otpInput = document.getElementById("otpInput").value;
+
+            const nameReg = /^[a-zA-Z]+$/;
+            const userNameReg = /^[a-zA-Z0-9]/;
+            const passwordReg = /^(?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,}$/;
+            const mobileReg = /^[6789]\d{9}$/;
+            const otpReg = /^\d{6}$/;
+
+            if (!nameReg.test(name)) {
+                showMessage("Please Enter a Valid Name", "red");
+            } else if (!userNameReg.test(userName)) {
+                showMessage("Please Enter a Valid User Name", "red");
+            } else if (!passwordReg.test(password)) {
+                showMessage("Please Enter a Valid Password", "red");
+            } else if (password !== confirmPassword) {
+                showMessage("Passwords Do Not Match", "red");
+            } else if (!mobileReg.test(mobileNumber)) {
+                showMessage("Please Enter a Valid Mobile Number", "red");
+            } else if (!otpReg.test(otpInput)) {
+                showMessage("Please Enter a Valid OTP", "red");
+            } else if (otp !== otpInput) {
+                showMessage("Invalid OTP", "red");
+            } else {
+                localStorage.setItem("useName" , userName)
+                localStorage.setItem("password" , password)
+                window.location.assign("./login.html");
+            }
+        });
+
+        function showMessage(message, color) {
+            let container = document.getElementById("mess");
+            container.innerHTML = "";
+            let head = document.createElement("h6");
+            head.innerText = message;
+            head.style.color = color;
+            container.appendChild(head);
+        }
+    </script>
+</body>
+
+</html>
